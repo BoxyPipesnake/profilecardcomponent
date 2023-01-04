@@ -13,5 +13,147 @@
 
 body {
     font-family: var(--font);
-    min-height: 100vh 
+    min-height: 100vh; 
+    background-color: var(--dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}   
+
+p {
+    font-size: 0.938rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+span {
+    font-weight: 400;
+    display: inline-block;
+}
+
+hr {
+    margin: 0;
+    margin-top: 1.375rem;
+    opacity: 0.3;
+}
+
+.grayish {
+    color: var(--grayish-blue);
+}
+
+.img-pattern-1, .img-pattern-2 {
+    animation: rotation 3.5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.img-pattern-1 {
+    width: 463px;
+    position: fixed;
+    transform: rotate(43deg);
+    left: -219px;
+    top: -124px;
+}
+
+.img-pattern-2 {
+    width: 445px;
+    transform: rotate(-9deg);
+    position: fixed;
+    bottom: -219px;
+    right: -124px;
+}
+
+@media (min-width: 768px) {
+    .img-pattern-1, .img-pattern-2 {
+        width: 600px;
+    }
+
+    .img-pattern-1 {
+        transform: rotate(14deg);
+        left: -170px;
+    }
+
+    .img-pattern-2 {
+    transform: rotate(90deg);
+    top: 572px;
+    bottom: -219px;
+    right: -249px;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    .img-pattern-1, .img-pattern-2 {
+        width: auto;
+    }
+
+    .img-pattern-1 {
+        left: -358px;
+        top: -599px;
+    }
+
+    .img-pattern-2 {
+        bottom: -543px;
+        right: -445px;
+    }
+}
+
+.wrapper {
+    /* border: 1px solid black; */
+    margin: 1.25rem;
+    background: white;
+    text-align: center;
+    border-radius: 1rem;
+    perspective: 1px;
+    overflow: hidden;
+}
+ 
+.pattern-img {
+    margin-bottom: -3.563rem;
+}
+
+.profile-img {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.heading, .stats-paragraph {
+    font-weight: 700;
+    font-size: 1.438rem;
+    color: var(--desaturated-blue);
+}
+
+
+.age {
+    margin-left: 0.438rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.stats-paragraph {
+    margin: 0;
+}
+
+.stats-span {
+    display: block;
+    margin-top: 0.375rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.094rem;   
 }
