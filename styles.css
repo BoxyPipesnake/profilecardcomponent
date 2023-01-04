@@ -1,0 +1,17 @@
+:root {
+    /* PRIMARY */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+
+    /* NEUTRAL */
+    --dark-gray: hsl(0, 0%, 59%);
+
+    /* FONT */
+    --font: 'Kumbh Sans', sans-serif;;
+}
+
+body {
+    font-family: var(--font);
+    min-height: 100vh 
+}
