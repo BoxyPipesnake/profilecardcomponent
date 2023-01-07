@@ -19,6 +19,9 @@ body {
     justify-content: center;
     align-items: center;
 
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 48vw bottom 40vh, left 45vw top 44vh;
 }   
 
 p {
@@ -44,78 +47,22 @@ hr {
     color: var(--grayish-blue);
 }
 
-.img-pattern-1, .img-pattern-2 {
-    animation: rotation 3.5s infinite linear;
-}
-
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-}
-
-.img-pattern-1 {
-    width: 463px;
-    position: fixed;
-    transform: rotate(43deg);
-    left: -219px;
-    top: -124px;
-}
-
-.img-pattern-2 {
-    width: 445px;
-    transform: rotate(-9deg);
-    position: fixed;
-    bottom: -219px;
-    right: -124px;
-}
-
-@media (min-width: 768px) {
-    .img-pattern-1, .img-pattern-2 {
-        width: 600px;
-    }
-
-    .img-pattern-1 {
-        transform: rotate(14deg);
-        left: -170px;
-    }
-
-    .img-pattern-2 {
-    transform: rotate(90deg);
-    top: 572px;
-    bottom: -219px;
-    right: -249px;
-    }
-
-}
-
-@media (min-width: 1100px) {
-    .img-pattern-1, .img-pattern-2 {
-        width: auto;
-    }
-
-    .img-pattern-1 {
-        left: -358px;
-        top: -599px;
-    }
-
-    .img-pattern-2 {
-        bottom: -543px;
-        right: -445px;
-    }
-}
 
 .wrapper {
-    /* border: 1px solid black; */
-    margin: 1.25rem;
-    background: white;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.card {
+    overflow: hidden;
     border-radius: 1rem;
     perspective: 1px;
-    overflow: hidden;
+    background-color: white;
 }
  
 .pattern-img {

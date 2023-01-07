@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
-  
+
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-  <div class="img-pattern-1">
-    <img src="images/bg-pattern-top.svg" aria-label="true">
-  </div>
-  <div class="img-pattern-2">
-    <img src="images/bg-pattern-bottom.svg" aria-label="true">
-  </div>
   <main class="wrapper">
-    <img class="pattern-img" src="images/bg-pattern-card.svg" aria-label="true">
-    <section class="card-container">
-      <div class="profile">
-        <div class="profile-img">
-          <img src="images/image-victor.jpg" alt="image profile" />
+    <div class="card">
+      <img class="pattern-img" src="images/bg-pattern-card.svg" aria-label="true">
+      <section class="card-container">
+        <div class="profile">
+          <div class="profile-img">
+            <img src="images/image-victor.jpg" alt="image profile" />
+          </div>
+          <h1 class="heading">Victor Crest <span class="age grayish">26</span> </h1>
+          <p class="profile-paragraph grayish">London</p>
         </div>
-        <h1 class="heading">Victor Crest <span class="age grayish">26</span> </h1>
-        <p class="profile-paragraph grayish">London</p>
-      </div>
-      <hr class="line-divider">
-      <div class="stats">
-        <p class="stats-paragraph">80K <span class="stats-span grayish">Followers</span></p>
-        <p class="stats-paragraph">803K <span class="stats-span grayish">Likes</span></p>
-        <p class="stats-paragraph">1.4K <span class="stats-span grayish"> Photos</span></p>
-      </div>
-    </section>
+        <hr class="line-divider">
+        <div class="stats">
+          <p class="stats-paragraph">80K <span class="stats-span grayish">Followers</span></p>
+          <p class="stats-paragraph">803K <span class="stats-span grayish">Likes</span></p>
+          <p class="stats-paragraph">1.4K <span class="stats-span grayish"> Photos</span></p>
+        </div>
+      </section>
+    </div>
   </main>
 </body>
+
 </html>
