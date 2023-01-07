@@ -43,6 +43,10 @@ hr {
     opacity: 0.3;
 }
 
+li {
+    list-style: none;
+}
+
 .grayish {
     color: var(--grayish-blue);
 }
@@ -76,9 +80,9 @@ hr {
     border: 5px solid white;
 }
 
-.heading, .stats-paragraph {
+.heading, .stats-item {
     font-weight: 700;
-    font-size: 1.438rem;
+    font-size: 1.2rem;
     color: var(--desaturated-blue);
 }
 
@@ -93,7 +97,7 @@ hr {
     padding: 2rem;
 }
 
-.stats-paragraph {
+.stats-item {
     margin: 0;
 }
 
